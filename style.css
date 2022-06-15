@@ -98,7 +98,6 @@ h4 {
   border: 2px solid #161f6d;
   outline: none;
   border-radius: 30px;
-  box-shadow: 2px 5px 10px #161f6d;
 }
 #mail:focus {
   background-color: white;
@@ -112,7 +111,6 @@ h4 {
   border-radius: 30px;
   background-color: #161f6d;
   color: white;
-  box-shadow: 1px 1px 1px #0079e1, inset 1px 1px 1px #fff, 0 0 7px #00abe1;
   top: 6px;
   right: 7px;
 }
