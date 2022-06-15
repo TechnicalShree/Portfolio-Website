@@ -3,6 +3,7 @@
 **version 1.0.0**
 
 This is a simple protfolio website.
+The main thing is that it is full of responsible.
 
 ---
 
