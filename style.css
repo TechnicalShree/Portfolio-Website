@@ -13,7 +13,8 @@
 html {
   scroll-behavior: smooth;
 }
-
+/* This one is for the header */
+/* ---------------------------------------------------------------------------------- */
 .header {
   min-height: 746px;
   width: 100%;
@@ -126,7 +127,7 @@ h4 {
   .checkbtn {
     display: block;
   }
-  ul {
+  .menu {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -137,12 +138,12 @@ h4 {
     transition: all 0.5s;
     z-index: 1;
   }
-  nav ul li {
+  nav .menu li {
     display: block;
     margin: 50px 0;
     line-height: 2rem;
   }
-  nav ul li a {
+  nav .menu li a {
     font-size: 20px;
   }
   #check:checked ~ ul {
@@ -168,6 +169,9 @@ h4 {
     font-size: 3rem;
   }
 }
+
+/* This one is for the about section */
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
 
 .about {
   width: 100%;
@@ -257,6 +261,93 @@ button:hover {
     font-size: 3rem;
   }
 }
+/* This one is for the skills section */
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+
+.skills {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 746px;
+  background-color: rgb(9 26 218);
+  box-shadow: 10px 0 5px rgb(9 26 218);
+}
+.skills .skill_logo {
+  position: absolute;
+  top: 20px;
+  width: 100px;
+  border-radius: 50%;
+}
+.skills ul {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.skills ul li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  width: 80vw;
+  max-width: 700px;
+  padding: 15px;
+  background: #00abe1;
+  border-radius: 30px;
+  box-shadow: 2px 2px 5px #000, 2px 2px 2px rgba(0, 0, 0, 0.15),
+    -2px -2px 5px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 1px rgba(0, 0, 0, 0.2),
+    inset 2px 2px 1px rgba(255, 255, 255, 0.4);
+}
+.skills ul li img {
+  margin: 0 15px;
+  width: 30px;
+}
+
+.skills .progress {
+  position: relative;
+  width: 85%;
+  height: 10px;
+  margin: 0 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15),
+    -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset -1px -1px 1px rgba(0, 0, 0, 0.2);
+}
+.skills .progress::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 60%;
+  background-color: #161f6d;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #000;
+}
+.progress.html::before {
+  width: 80%;
+}
+.progress.css::before {
+  width: 70%;
+}
+.progress.js::before {
+  width: 50%;
+}
+.progress.react::before {
+  width: 50%;
+}
+.progress.java::before {
+  width: 60%;
+}
+
+/* This one is for the contact section */
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
 
 .contact-me {
   width: 100%;
@@ -296,6 +387,9 @@ button:hover {
     line-height: 2.5rem;
   }
 }
+
+/* This one is for the footer */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 footer {
   position: relative;
